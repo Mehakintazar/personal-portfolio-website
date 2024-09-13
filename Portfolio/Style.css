@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111;
+    color: #eee;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  h1, h2, h3, p {
+    margin: 10px 0;
+  }
+  
+  #hero {
+    height: 170vh;
+    background: url('me.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-content h1 {
+    font-size: 3em;
+    color: white;
+    ;
+  }
+  
+  .hero-content p {
+    color: #aaa;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #555;
+  }
+  
+  #about {
+    padding: 50px;
+    text-align: center;
+    background-color: #111;
+    color: #fff;
+  }
+  
+  #about img {
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+  
+  #services {
+    background-color: #000;
+    color: white;
+    padding: 50px 20px;
+  }
+  
+  .services-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: #222;
+    padding: 20px;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card i {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  #projects {
+    padding: 150px 50px;
+    background-color: #111;
+    color: white;
+    text-align: center;
+  }
+  
+  .slider {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .slide {
+    min-width: 100%;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .slider-controls {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    font-size: 2em;
+  }
+  
+  #contact {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  form input, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  form button {
+    padding: 10px 20px;
+    background-color: #333;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #555;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .services-cards, .about-content, .slider {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
